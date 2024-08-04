@@ -1,0 +1,13 @@
+% zsh
+
+# Cd to git repository under ghq control
+ctrl + g
+
+# Clear screen
+ctrl + l
+
+# Suspend the current process
+ctrl + z
+
+# edit current line by vim
+ctrl + x

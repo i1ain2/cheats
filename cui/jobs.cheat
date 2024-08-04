@@ -1,0 +1,25 @@
+% jobs, foreground, background, job-control
+
+# Run a command in the background
+<command> &
+
+# List all jobs
+jobs
+
+# Bring the most recently stopped job to the foreground
+fg
+
+# Bring a specific job to the foreground
+fg %<job_id>
+
+# Run a job in the background
+bg %<job_id>
+
+# Kill a job
+kill %<job_id>
+
+# Stop a job
+kill -STOP %<job_id>
+
+# Continue a stopped job
+kill -CONT %<job_id>

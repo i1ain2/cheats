@@ -1,0 +1,10 @@
+% navi
+
+# add official cheatsheets
+navi repo add denisidoro/cheats
+
+# add remote repo
+navi repo add <user/repo>
+
+# navi from local cheatsheet
+navi --path <path-to-repo>

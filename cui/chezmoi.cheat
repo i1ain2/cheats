@@ -1,0 +1,13 @@
+% chezmoi
+
+# Show the diff of the current state of the source state
+chezmoi diff
+
+# Apply the source state to the destination state
+chezmoi apply
+
+# To clear the state of run_onchange_ scripts
+chezmoi state delete-bucket --bucket=entryState
+
+# To clear the state of run_once_ scripts
+chezmoi state delete-bucket --bucket=scriptState

@@ -24,6 +24,9 @@ pacman -Qi <package_name>
 # List orphaned packages
 pacman -Qdt
 
+# List installed packages from AUR
+pacman -Qm
+
 # Clean package cache
 pacman -Sc
 

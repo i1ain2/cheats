@@ -1,0 +1,35 @@
+% pacman, arch linux
+
+# Install a package
+pacman -S <package_name>
+
+# Remove a package (keep dependencies)
+pacman -R <package_name>
+
+# Remove a package and its dependencies
+pacman -Rs <package_name>
+
+# Upgrade the entire system
+pacman -Syu
+
+# Search for a package
+pacman -Ss <search_term>
+
+# List installed packages
+pacman -Q
+
+# Display package information
+pacman -Qi <package_name>
+
+# List orphaned packages
+pacman -Qdt
+
+# Clean package cache
+pacman -Sc
+
+# Force reinstall a package
+pacman -S --force <package_name>
+
+$ package_name: pacman -Slq | sort -u
+$ search_term: echo "Enter the package name to search for"
+

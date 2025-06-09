@@ -1,0 +1,82 @@
+% claude-code
+
+# Start interactive REPL
+claude
+
+# Start REPL with initial prompt
+claude "<query>"
+
+# Execute one-time query and exit
+claude -p "<query>"
+
+# Process piped content
+cat <file> | claude -p "<query>"
+
+# Continue latest conversation
+claude -c
+
+# Resume specific session
+claude -r "<session_id>" "<query>"
+
+# Update to latest version
+claude update
+
+# Set up Model Context Protocol server
+claude mcp
+
+# Start with specific model
+claude --model <model_name>
+
+# Execute with allowed tools only
+claude --allowedTools <tool1,tool2>
+
+# Execute with disallowed tools
+claude --disallowedTools <tool1,tool2>
+
+# Set output format (text, json, stream-json)
+claude --output-format <format>
+
+# Enable verbose logging
+claude --verbose
+
+# Limit agent turns in non-interactive mode
+claude --max-turns <number>
+
+# Skip permission prompts (dangerous)
+claude --dangerously-skip-permissions
+
+# Quick memory addition (in REPL)
+# <memory_item>
+
+# Multiline input (in REPL)
+# Use backslash \ or Option/Shift+Enter
+
+# Enter Vim mode (in REPL)
+/vim
+
+# Resume from conversation list
+claude --resume
+
+# Continue with print mode
+claude --continue --print
+
+# Process file with specific query
+cat package.json | claude -p "このプロジェクトの依存関係を説明してください"
+
+# Bug fixing workflow
+claude -p "このエラーを修正してください: <error_message>"
+
+# Code review
+claude -p "このコードをレビューしてください" < <file>
+
+# Architecture analysis
+claude "このプロジェクトのアーキテクチャパターンを説明してください"
+
+# Refactoring suggestions
+claude "このコードを現代的なパターンにリファクタリングしてください"
+
+# Test writing
+claude "この関数のテストを書いてください"
+
+# Documentation generation
+claude -p "このAPIの使用方法を説明してください"

@@ -8,6 +8,9 @@
 
 % zsh (my keybindings)
 
+# call fzf-git
+^x + ^o
+
 # Cd to git repository under ghq control
 ^x + ^g
 
@@ -16,3 +19,4 @@
 
 # call navi
 ^x + ^h
+

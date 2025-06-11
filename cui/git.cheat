@@ -1,0 +1,29 @@
+% git worktree
+
+# Create a new worktree
+git worktree add <path> <branch>
+
+# Create a new worktree with new branch
+git worktree add <path> -b <new-branch>
+
+# Create worktree with detached HEAD
+git worktree add --detach <path> <commit>
+
+# List all worktrees
+git worktree list
+
+# Remove a worktree
+git worktree remove <path>
+
+# Prune stale worktree entries
+git worktree prune
+
+# Move a worktree to a new location
+git worktree move <worktree> <new-path>
+
+# Lock a worktree (prevent removal)
+git worktree lock <path>
+
+# Unlock a worktree
+git worktree unlock <path>
+
